@@ -4,8 +4,8 @@ The purpose of this project is twofold, it will:
 - Help me learn how to write c++
 - Teach me how to implement the following algorithms consistenty:
     - Binary Search
-    - DFS
     - BFS
+    - DFS
     - Sliding Window
 
 ## How it works?
