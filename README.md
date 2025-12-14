@@ -15,3 +15,4 @@ Within the directory will be a sub directory corresponding to the number of impl
 Within each sub directory will be a C++ file for each of the above algorithms.
 
 Upon completing your implementation of an algorithm, run the associated test with the following command [TBD]
+!Tests only check that you output an expected result meaning that you can cheat to pass the tests by brute forcing the expected result. Do this if you wish however remember the point of this project is to learn so you are only cheating yourself.

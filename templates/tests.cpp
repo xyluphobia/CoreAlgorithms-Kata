@@ -1,3 +1,5 @@
+#include <cassert>
+
 #include "BinarySearch.cpp"
 #include "BreadthFirstSearch.cpp"
 #include "DepthFirstSearch.cpp"
@@ -6,7 +8,11 @@
 class Tests {
 public:
   void test_BinarySearch() {
-    BinarySearch();
+    assert(BinarySearch(new int[]{1,2,3,4,5}, 9) == -1);
+    assert(BinarySearch(new int[]{1,2,3,4,5}, 3) == -1);
+    assert(BinarySearch(new int[]{1,2,3,4,5}, 1) == -1);
+    assert(BinarySearch(new int[]{1,2,3,4,5}, 5) == -1);
+    assert(BinarySearch(new int[]{1,2,3,4,5}, -1) == -1);
   }
 
   void test_BFS() {
