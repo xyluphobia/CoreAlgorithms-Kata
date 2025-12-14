@@ -23,7 +23,7 @@ int main (int argc, char** argv) {
 
 
   // TODO: Command to run tests: test {algorithm}
-
+  
 
   /*for (int i = 1; i < argc; i++) {
     cout << argv[i] << "\n";

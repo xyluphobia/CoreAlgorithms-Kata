@@ -62,20 +62,25 @@ void BuildFiles(string monthString) {
   ofstream slidingWindowPattern(attemptDirectory + "/SlidingWindowPattern.cpp");
   
   if (binarySearchFile.is_open()) {
-    binarySearchFile << "#include<iostream>\n\nint main () {\n\t\n\treturn 0;\n}";
+    binarySearchFile << "#include<iostream>\n\nint BinarySearch() {\n\t\n\treturn 0;\n}";
   }
   if (depthFirstSearch.is_open()) {
-    depthFirstSearch << "#include<iostream>\n\nint main () {\n\t\n\treturn 0;\n}";
+    depthFirstSearch << "#include<iostream>\n\nint DFS() {\n\t\n\treturn 0;\n}";
   }
   if (breadthFirstSearch.is_open()) {
-    breadthFirstSearch << "#include<iostream>\n\nint main () {\n\t\n\treturn 0;\n}";
+    breadthFirstSearch << "#include<iostream>\n\nint BFS() {\n\t\n\treturn 0;\n}";
   }
   if (slidingWindowPattern.is_open()) {
-    slidingWindowPattern << "#include<iostream>\n\nint main () {\n\t\n\treturn 0;\n}";
+    slidingWindowPattern << "#include<iostream>\n\nint SlidingWindow() {\n\t\n\treturn 0;\n}";
   }
   
   binarySearchFile.close();
   depthFirstSearch.close();
   breadthFirstSearch.close();
   slidingWindowPattern.close();
+
+  // Add test funcions here so that they are run by compiling and running test file
+  // They should have the option to run only one test using a flag. e.g. -binarysearch
+  // This file will be created in src/tests.cpp & copied into new directories.
+  fs::copy("tests.cpp", attemptDirectory+ "/tests.cpp");
 }
